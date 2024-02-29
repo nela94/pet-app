@@ -4,7 +4,6 @@ import Home from './Home';
 import PetContainer from './PetContainer';
 import './App.css';
 import Navbar from './Navbar';
-import MatchedPets from './MatchedPet';
 
 const App = () => {
   return (
@@ -18,8 +17,7 @@ const App = () => {
             <div id="container_demo" >
             <Routes>
               <Route path="/" element={<Home />} />
-              <Route path="/pets" element={<PetContainer />} />
-              <Route path="/PetList" element={<MatchedPets />} />
+              <Route path="/petss" element={<PetContainer />} />
             </Routes>
             </div>
           </section>

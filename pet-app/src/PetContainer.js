@@ -18,9 +18,12 @@ const PetContainer = () => {
       apiKey: 'LoNa7Ywt2U5nIsri24c5A43mqRLtGfKycmlcNvsxvWDgt7H5PN',
       secret: 'ukOA5R6hiU5p6L6mIMexs4rP3oOPr5TEoKWTiW7U'
     });
-
-    client.animal.search({ type: "Dog" })
-      .then(response => setDogs(response.data.animals))
+ 
+    client.animal.search({ type: "Doggg" })
+    .then(response => {
+      console.log('Response for dogs:', response); // Log the response
+      setDogs(response.data.animals);
+    })
       .catch(error => console.error('Error fetching dogs:', error));
 
     client.animal.search({ type: "Cat" })
